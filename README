@@ -1,0 +1,140 @@
+autotoolset
+------------------------------------------
+The Autotoolset package complements the GNU build system by providing 
+the following features:
+
+* Automatic generation of legal notices that are needed in order to 
+apply the GNU GPL license
+* Automatic generation of directory trees for new software packages, 
+such that they conform to the GNITS standard (more or less).
+* Some rudimentary portability framework for C++ programs. Also a 
+framework for embedding text into your executable and handling include 
+files across multiple directories.
+* Support for writing portable software that uses both Fortran and C++.
+* Additional support for writing software documentation in Texinfo, 
+but also in LaTeX.
+* A manual introducing both Autotools and the GNU build system in a 
+unified task-oriented manner.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  bash
+  coreutils
+  gawk
+  perl
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.6-1.6.3-5
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+  sharutils-4.7-1
+
+Canonical website:
+  http://autotoolset.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/autotoolset/
+
+-------------------------------------------
+
+Build instructions:
+  unpack autotoolset-0.11.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./autotoolset-0.11.4-X.cygport all
+
+This will create:
+  /usr/src/autotoolset-0.11.4-X-src.tar.bz2
+  /usr/src/autotoolset-0.11.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/acconfig
+  /usr/bin/acmkdir
+  /usr/bin/gpl
+  /usr/bin/mkconfig.exe
+  /usr/bin/mkf2c
+  /usr/bin/mkf2c_comp
+  /usr/bin/mkfortran
+  /usr/bin/mktxtc
+  /usr/share/aclocal/lf_assert.m4
+  /usr/share/aclocal/lf_bash.m4
+  /usr/share/aclocal/lf_cc.m4
+  /usr/share/aclocal/lf_config.m4
+  /usr/share/aclocal/lf_cxx.m4
+  /usr/share/aclocal/lf_fortran.m4
+  /usr/share/aclocal/lf_host_type.m4
+  /usr/share/aclocal/lf_lisp.m4
+  /usr/share/aclocal/lf_local.m4
+  /usr/share/aclocal/lf_nm.m4
+  /usr/share/aclocal/lf_texidoc.m4
+  /usr/share/aclocal/lf_txtc.m4
+  /usr/share/aclocal/lf_warnings.m4
+  /usr/share/aclocal/lf_x11.m4
+  /usr/share/autotoolset/doc_makefile.am
+  /usr/share/autotoolset/f2c_comp.sh
+  /usr/share/autotoolset/new_install.txt
+  /usr/share/autotoolset/python/MANIFEST.in
+  /usr/share/autotoolset/python/__init__.py
+  /usr/share/autotoolset/python/__init__.py.zope
+  /usr/share/autotoolset/python/configure.ac.zope
+  /usr/share/autotoolset/python/install_data.py
+  /usr/share/autotoolset/python/new_install_python.txt
+  /usr/share/autotoolset/python/setup.cfg
+  /usr/share/autotoolset/python/setup.py
+  /usr/share/autotoolset/python/src.Makefile.am.zope
+  /usr/share/autotoolset/python/src.dtml.Makefile.am.zope
+  /usr/share/autotoolset/python/src.interfaces.Makefile.am.zope
+  /usr/share/autotoolset/python/src.www.Makefile.am.zope
+  /usr/share/doc/autotoolset-0.11.4/AUTHORS
+  /usr/share/doc/autotoolset-0.11.4/COPYING
+  /usr/share/doc/autotoolset-0.11.4/ChangeLog
+  /usr/share/doc/autotoolset-0.11.4/INSTALL
+  /usr/share/doc/autotoolset-0.11.4/NEWS
+  /usr/share/doc/autotoolset-0.11.4/README
+  /usr/share/doc/autotoolset-0.11.4/THANKS
+  /usr/share/doc/autotoolset-0.11.4/TODO
+  /usr/share/emacs/site-lisp/gpl-copying.el
+  /usr/share/emacs/site-lisp/gpl.el
+  /usr/share/emacs/site-lisp/texinfo-xtra.el
+  /usr/share/info/gnits.info-1.gz
+  /usr/share/info/gnits.info-2.gz
+  /usr/share/info/gnits.info.gz
+  /usr/share/info/toolsmanual.info-1.gz
+  /usr/share/info/toolsmanual.info-2.gz
+  /usr/share/info/toolsmanual.info-3.gz
+  /usr/share/info/toolsmanual.info-4.gz
+  /usr/share/info/toolsmanual.info-5.gz
+  /usr/share/info/toolsmanual.info-6.gz
+  /usr/share/info/toolsmanual.info-7.gz
+  /usr/share/info/toolsmanual.info-8.gz
+  /usr/share/info/toolsmanual.info.gz
+  /usr/share/info/tutorial.info-1.gz
+  /usr/share/info/tutorial.info-2.gz
+  /usr/share/info/tutorial.info-3.gz
+  /usr/share/info/tutorial.info-4.gz
+  /usr/share/info/tutorial.info-5.gz
+  /usr/share/info/tutorial.info-6.gz
+  /usr/share/info/tutorial.info-7.gz
+  /usr/share/info/tutorial.info-8.gz
+  /usr/share/info/tutorial.info.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.11.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

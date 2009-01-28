@@ -1,0 +1,11 @@
+--- origsrc/autotoolset-0.11.4/src/acmkdir/Makefile.am	2003-04-03 14:46:39.000000000 -0600
++++ src/autotoolset-0.11.4/src/acmkdir/Makefile.am	2009-01-27 20:47:00.594250000 -0600
+@@ -47,7 +47,7 @@ mkfortran: $(srcdir)/fortran.tar.gz
+ 	tar xf fortran.tar
+ 	($(SHAR) fortran > mkfortran) >& /dev/null
+ 	chmod ugo+x mkfortran
+-	rm -rf fortran
++	-rm -rf fortran
+ 	rm -f fortran.tar
+ 
+ mkf2c: $(srcdir)/f2c-main.c.src $(srcdir)/f2c.h.src
