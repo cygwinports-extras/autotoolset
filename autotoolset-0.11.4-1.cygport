@@ -1,6 +1,9 @@
 DESCRIPTION="Additional tools for GNU autotoolized packages"
 HOMEPAGE="http://autotoolset.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-PATCH_URI="0.11.4-parallel-make.patch"
+PATCH_URI="mirror://gentoo/${P}-misc-pending-upstream-fixes.gz
+           0.11.4-head-tail-posix.patch
+           0.11.4-parallel-make.patch"
 
 ACLOCAL_FLAGS="-I m4"
+CYGCONF_ARGS="EMACS=no"

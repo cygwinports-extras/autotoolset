@@ -1,0 +1,15 @@
+--- origsrc/autotoolset-0.11.4/src/gpl/gpl.sh	2003-03-07 16:48:35.000000000 -0600
++++ src/autotoolset-0.11.4/src/gpl/gpl.sh	2009-02-01 00:03:38.610486300 -0600
+@@ -72,9 +72,9 @@ function configure
+ {
+  if test -r ${HOME}/.GPL
+  then
+-   author_name="$(cat ${HOME}/.GPL | head -1 | tail -1)"
+-   email_address="$(cat ${HOME}/.GPL | head -2 | tail -1)"
+-   todays_year="$(cat ${HOME}/.GPL | head -3 | tail -1)"
++   author_name="$(cat ${HOME}/.GPL | head -n 1 | tail -n -1)"
++   email_address="$(cat ${HOME}/.GPL | head -n 2 | tail -n -1)"
++   todays_year="$(cat ${HOME}/.GPL | head -n 3 | tail -n -1)"
+  else
+    echo "The following information is required for your copyright notices."
+    echo -n "Your name is:          "
