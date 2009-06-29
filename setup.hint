@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin libgcc1 bash coreutils gawk perl
+requires: libgcc1 bash coreutils gawk perl
 sdesc: "Additional tools for GNU autotoolized packages"
 ldesc: "The Autotoolset package complements the GNU build system by 
 providing the following features:
