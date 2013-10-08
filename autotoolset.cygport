@@ -1,0 +1,16 @@
+inherit python
+
+NAME="autotoolset"
+VERSION=0.11.4
+RELEASE=10
+CATEGORY="Devel"
+SUMMARY="Additional tools for GNU autotoolized packages"
+DESCRIPTION="The Autotoolset package complements the GNU build system by
+providing several additional tools."
+HOMEPAGE="http://autotoolset.sourceforge.net/"
+SRC_URI="mirror://sourceforge/autotoolset/${NAME}-${VERSION}.tar.bz2"
+PATCH_URI="mirror://gentoo/autotoolset-0.11.4-misc-pending-upstream-fixes.gz
+           0.11.4-head-tail-posix.patch
+           0.11.4-parallel-make.patch"
+
+ACLOCAL_FLAGS="-I m4"
